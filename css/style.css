@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Helvetica Neue, Helvetica, Arial;
+    font-size: 16px;
+    flex-direction: column;
+    align-content: center;
+    background-color:  #e7e7e7;;
+
+
+}
+.container{
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 250px;
+    background-color: #e7e7e7;
+    padding-top: 0;
+    margin-top: 0;
+
+
+}
+
+h1{
+    display: flex;
+    color: #8b2c1c;
+    font-family: "Righteous";
+    text-transform: uppercase;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding-top: 20px;
+    height: 500px;
+    background-color: whitesmoke;
+
+}
+
+.metronome, .gizmo, .daily-helper{
+    height: 200px;
+    width: 200px;
+    border: 2px solid salmon;
+    display: flex;
+    background-color: #8b2c1c;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#e7e7e7 ;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 100px;
+    background-color: 	#e7e7e7;
+    color: #8b2c1c;
+    font-family: "Righteous";
+    text-transform: uppercase;
+    align-items: flex-end;
+
+}
+
+.jan{
+    display: flex;
+    height: 20px;
+}
