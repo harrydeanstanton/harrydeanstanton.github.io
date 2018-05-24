@@ -90,6 +90,10 @@ h1{
 @media (max-width: 580px) {
     .projects{
         flex-direction: column;
+        height: 500px;
+    }
+    .metronome, .gizmo, .daily-helper {
+        width: 100vw;
     }
 }
 @media (max-width: 970px) {
