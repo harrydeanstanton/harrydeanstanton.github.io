@@ -28,7 +28,7 @@ body{
     justify-content: center;
     align-content: center;
     height: 150px;
-    background-color: #e7e7e7;
+    background-color: black;
     padding-top: 0;
     margin: 0;
     width: 100%;
@@ -49,7 +49,7 @@ h1{
     background-color: whitesmoke;
     border-left: 1px solid black;
     border-right: 1px solid black;
-    height: 650px;
+    height: 630px;
     width: 1024px;
     justify-content: space-around;
 
@@ -63,7 +63,7 @@ h1{
     font-family: "Righteous";
     text-transform: uppercase;
     text-decoration: none;
-    color: #e7e7e7;
+    color: black;
     margin: 2px;
 }
 
@@ -71,7 +71,7 @@ h1{
     display: flex;
     justify-content: flex-end;
     height: 100px;
-    background-color: 	#e7e7e7;
+    background-color: black;
     color: #8b2c1c;
     font-family: "Righteous";
     text-transform: uppercase;
@@ -90,7 +90,8 @@ h1{
 @media (max-width: 580px) {
     .projects{
         flex-direction: column;
-        height: 500px;
+        height: 100vw;
+        width: 100vw;
     }
     .metronome, .gizmo, .daily-helper {
         width: 100vw;
