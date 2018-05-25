@@ -20,6 +20,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+
+
+
 
 }
 
@@ -34,6 +38,8 @@ body{
     width: 100%;
 
 
+
+
 }
 
 h1{
@@ -41,30 +47,54 @@ h1{
     color: #8b2c1c;
     font-family: "Righteous";
     text-transform: uppercase;
+    animation-name: reveal;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+
+
+
 }
 
 .projects{
     display: flex;
     flex-direction: row;
     background-color: whitesmoke;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    /*border-left: 1px solid black;
+    border-right: 1px solid black;*/
     height: 630px;
-    width: 1024px;
+    width: 100%;
     justify-content: space-around;
+    align-items: center;
 
 }
+
 
 .metronome, .gizmo, .daily-helper {
     height: 20%;
     width: 15%;
-    display: flex;
     background-color: #8b2c1c;
     font-family: "Righteous";
     text-transform: uppercase;
     text-decoration: none;
     color: black;
     margin: 2px;
+    padding: 3px;
+    opacity: 1;
+    animation-name: fade-in;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+}
+
+.project_name{
+    animation-name: show-names;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    text-shadow: -2px 0 whitesmoke, 0 2px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
 }
 
 .footer{
@@ -77,6 +107,7 @@ h1{
     text-transform: uppercase;
     align-items: flex-end;
     width: 100%;
+
 
 
 
@@ -100,5 +131,45 @@ h1{
 @media (max-width: 970px) {
     .projects {
         justify-content: center;
+    }
+}
+
+
+@keyframes fade-in {
+    0% {
+        flex-grow: 1;
+        height: 100%;
+        border: none;
+    }
+    70% {
+        flex-grow: 1;
+        height: 100%;
+        border: none;
+    }
+
+    100% {
+        flex-grow: 0;
+        height: 20%;
+    }
+}
+
+@keyframes reveal {
+    0% {color: black;}
+    30%{color:#250005 ;}
+    60% {color: #3a0005}
+    100% {color: #8b2c1c;}
+}
+
+
+@keyframes show-names {
+    0% {
+        color: #8b2c1c;
+        text-shadow: none;
+
+    }
+
+    100% {
+        color: black;
+
     }
 }
