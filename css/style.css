@@ -13,6 +13,7 @@ body{
     justify-content: center;
     align-items: center;
 
+
 }
 
 .container{
@@ -100,7 +101,7 @@ h1{
 .footer{
     display: flex;
     justify-content: flex-end;
-    height: 100px;
+    height: 400px;
     background-color: black;
     color: #8b2c1c;
     font-family: "Righteous";
