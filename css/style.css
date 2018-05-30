@@ -4,7 +4,6 @@
 
 body{
     display: flex;
-    font-family: Helvetica Neue, Helvetica, Arial;
     font-size: 16px;
     flex-direction: column;
     background-color:  whitesmoke;
@@ -12,165 +11,114 @@ body{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    padding: 0;
+
 
 
 }
 
 .container{
-    width: 1024px;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    height: 1000px;
+    justify-content: space-around ;
     align-items: center;
     flex-direction: column;
-
-
-
+    font-family: Righteous;
+    background: url(".././dist/contemporary-desk-electronics-955460.jpg");
+    background-size: cover;
 
 }
 
-.header{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    height: 150px;
-    background-color: black;
-    padding-top: 0;
-    margin: 0;
+h1 {
+    font-size: 3em;
+    color: #6E6E7B;
+}
+
+.project_name_1, .project_name_2, .project_name_3 {
+    color: antiquewhite;
+    opacity: 0;
+
+}
+
+
+
+.projects {
     width: 100%;
-
-
-
-
-}
-
-h1{
+    height: 100%;
     display: flex;
-    color: #8b2c1c;
-    font-family: "Righteous";
-    text-transform: uppercase;
-    animation-name: reveal;
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-
-
-
-}
-
-.projects{
-    display: flex;
-    flex-direction: row;
-    background-color: whitesmoke;
-    /*border-left: 1px solid black;
-    border-right: 1px solid black;*/
-    height: 630px;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
+    align-items: left;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 30px;
 
 }
 
 
+.metronome:hover .project_name_1 {
+    opacity: 1;
+}
+
+.gizmo:hover .project_name_2{
+    opacity: 1
+}
+
+.daily-helper:hover .project_name_3{
+    opacity: 1;
+}
+
+.project_descr_1{
+    display: none;
+    position: absolute;
+    left: 866px;
+    top: 443px;
+    color: lime;
+    font-family: "Courier";
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+
+}
+
+.metronome:hover .project_descr_1{
+    display: inline;
+    animation: type 4s steps(60, end);
+}
 .metronome, .gizmo, .daily-helper {
-    height: 20%;
-    width: 15%;
-    background-color: #8b2c1c;
-    font-family: "Righteous";
-    text-transform: uppercase;
+    display: flex;
     text-decoration: none;
     color: black;
-    margin: 2px;
-    padding: 3px;
-    opacity: 1;
-    animation-name: fade-in;
-    animation-duration: 4s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    border-bottom: 4px solid black;
-    border-right: 4px solid black;
-}
-
-.project_name{
-    animation-name: show-names;
-    animation-duration: 4s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: 1;
-    text-shadow: -2px 0 whitesmoke, 0 2px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
-}
-
-.footer{
-    display: flex;
-    justify-content: flex-end;
-    height: 400px;
-    background-color: black;
-    color: #8b2c1c;
-    font-family: "Righteous";
-    text-transform: uppercase;
-    align-items: flex-end;
-    width: 100%;
-
-
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    background-color: #1dbabf;
+    border-radius: 10%;
+    margin: 20px;
+    justify-content: center;
 
 
 }
 
-.jan{
-    display: flex;
-    height: 20px;
-}
+
 
 @media (max-width: 580px) {
     .projects{
         flex-direction: column;
         height: 100vw;
         width: 100vw;
+        flex-grow: 1;
+        align-items: center;
+        margin: 10px;
     }
-    .metronome, .gizmo, .daily-helper {
+
+    .project_name {
+        margin: 10px;
         width: 100vw;
     }
 }
-@media (max-width: 970px) {
-    .projects {
-        justify-content: center;
-    }
-}
 
-
-@keyframes fade-in {
-    0% {
-        flex-grow: 1;
-        height: 100%;
-        border: none;
-    }
-    70% {
-        flex-grow: 1;
-        height: 100%;
-        border: none;
-    }
-
-    100% {
-        flex-grow: 0;
-        height: 20%;
-    }
-}
-
-@keyframes reveal {
-    0% {color: black;}
-    30%{color:#250005 ;}
-    60% {color: #3a0005}
-    100% {color: #8b2c1c;}
-}
-
-
-@keyframes show-names {
-    0% {
-        color: #8b2c1c;
-        text-shadow: none;
-
-    }
-
-    100% {
-        color: black;
-
-    }
+@keyframes type{
+    from { width: 0; }
 }
