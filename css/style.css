@@ -57,18 +57,22 @@ h1 {
 
 .metronome:hover .project_name_1 {
     opacity: 1;
+    font-size: 2em;
+
 }
 
 .gizmo:hover .project_name_2{
-    opacity: 1
+    opacity: 1;
+    font-size: 2em;
+
 }
 
 .daily-helper:hover .project_name_3{
     opacity: 1;
+    font-size: 2em;
 }
 
-.project_descr_1{
-    display: none;
+.project_descr{
     position: absolute;
     left: 866px;
     top: 443px;
@@ -79,13 +83,21 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     width: 30em;
-
-}
-
-.metronome:hover .project_descr_1{
-    display: inline;
     animation: type 4s steps(60, end);
+
 }
+
+.text_1 {
+    display: none;
+}
+
+.description:hover {
+    color: lime;
+    transition: 3s;
+
+}
+
+
 .metronome, .gizmo, .daily-helper {
     display: flex;
     text-decoration: none;
@@ -97,9 +109,18 @@ h1 {
     border-radius: 10%;
     margin: 20px;
     justify-content: center;
+    transition: width 0.5s, height 0.5s, background-color 0.5s;
+
 
 
 }
+
+.metronome:hover, .gizmo:hover, .daily-helper:hover {
+    width: 300px;
+    height: 100px;
+    background-color: tomato;
+}
+
 
 
 
