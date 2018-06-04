@@ -138,6 +138,12 @@ h1 {
         margin: 10px;
         width: 100vw;
     }
+
+    .project_name_1, .project_name_2, .project_name_3 {
+        color: antiquewhite;
+        opacity: 1;
+
+    }
 }
 
 @keyframes type{
