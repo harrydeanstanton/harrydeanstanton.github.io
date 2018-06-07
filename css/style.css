@@ -121,7 +121,11 @@ h1 {
     background-color: tomato;
 }
 
-
+@media (max-width: 1650px) {
+    .project_descr {
+        display: none;
+    }
+}
 
 
 @media (max-width: 580px) {
