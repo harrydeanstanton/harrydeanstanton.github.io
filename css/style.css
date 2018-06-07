@@ -74,7 +74,7 @@ h1 {
 
 .project_descr{
     position: absolute;
-    left: 966px;
+    left: 996px;
     top: 493px;
     color: lime;
     font-family: "Courier";
@@ -125,7 +125,7 @@ h1 {
 
 
 @media (max-width: 580px) {
-    .projects{
+    .projects {
         flex-direction: column;
         height: 100vw;
         width: 100vw;
@@ -144,8 +144,17 @@ h1 {
         opacity: 1;
 
     }
+
+    .project_descr {
+        display: none;
+    }
+
+    .description:hover {
+        color: lime;
+        transition: 1s;
+    }
 }
 
-@keyframes type{
+    @keyframes type {
     from { width: 0; }
 }
